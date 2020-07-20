@@ -7,9 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ 'PEGATINAS' }}</title>
 
-    <!-- Scripts -->
+    <!-- Scripts config('app.name', 'PEGATINAS')-->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
