@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsuarioTipoUsuariosTable extends Migration
+class CreateObjetosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateUsuarioTipoUsuariosTable extends Migration
      */
     public function up()
     {
-        Schema::create('usuario_tipo_usuarios', function (Blueprint $table) {
+        Schema::create('objetos', function (Blueprint $table) {
             $table->id();
             $table->string('nome_token');
-            $table->foreignId('idtipousuario')->constrained('tipo_usuarios');
-            $table->foreignId('idusuario')->constrained('users');;
+            $table->foreignId('idcodigoqr')->constrained('codigo_q_r_s');
+            $table->string('name');
+            $table->string('description');
             $table->string('estado_del')->default('1');
             $table->timestamps();
         });
@@ -30,6 +31,6 @@ class CreateUsuarioTipoUsuariosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('usuario_tipo_usuarios');
+        Schema::dropIfExists('objetos');
     }
 }

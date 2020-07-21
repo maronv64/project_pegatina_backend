@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateObjetosTable extends Migration
+class CreateCodigoQRSTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateObjetosTable extends Migration
      */
     public function up()
     {
-        Schema::create('objetos', function (Blueprint $table) {
+        Schema::create('codigo_q_r_s', function (Blueprint $table) {
             $table->id();
             $table->string('nome_token');
-            $table->string('name');
-            $table->string('description');
+            $table->foreignId('iduser')->constrained('users');
+            $table->string('dato');
+            $table->string('estado');
             $table->string('estado_del')->default('1');
             $table->timestamps();
         });
@@ -30,6 +31,6 @@ class CreateObjetosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('objetos');
+        Schema::dropIfExists('codigo_q_r_s');
     }
 }

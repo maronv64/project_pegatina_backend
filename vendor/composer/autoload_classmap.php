@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Categoria' => $baseDir . '/app/Categoria.php',
     'App\\CategoriaObjeto' => $baseDir . '/app/CategoriaObjeto.php',
+    'App\\CodigoQR' => $baseDir . '/app/CodigoQR.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -20,6 +21,7 @@ return array(
     'App\\Http\\Controllers\\CategoriaObjetoController' => $baseDir . '/app/Http/Controllers/CategoriaObjetoController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
+    'App\\Http\\Controllers\\ObjetoController' => $baseDir . '/app/Http/Controllers/ObjetoController.php',
     'App\\Http\\Controllers\\TipoUsuarioController' => $baseDir . '/app/Http/Controllers/TipoUsuarioController.php',
     'App\\Http\\Controllers\\UsuarioTipoUsuarioController' => $baseDir . '/app/Http/Controllers/UsuarioTipoUsuarioController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
@@ -134,6 +136,7 @@ return array(
     'Carbon\\Translator' => $vendorDir . '/nesbot/carbon/src/Carbon/Translator.php',
     'CategoriaObjetoSeeder' => $baseDir . '/database/seeds/CategoriaObjetoSeeder.php',
     'CategoriaSeeder' => $baseDir . '/database/seeds/CategoriaSeeder.php',
+    'CodigoQRSeeder' => $baseDir . '/database/seeds/CodigoQRSeeder.php',
     'Cron\\AbstractField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
     'Cron\\CronExpression' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
     'Cron\\DayOfMonthField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',

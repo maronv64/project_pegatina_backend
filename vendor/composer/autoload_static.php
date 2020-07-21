@@ -493,6 +493,7 @@ class ComposerStaticInit36044eac90ec98025dbcb3087d87bf06
     public static $classMap = array (
         'App\\Categoria' => __DIR__ . '/../..' . '/app/Categoria.php',
         'App\\CategoriaObjeto' => __DIR__ . '/../..' . '/app/CategoriaObjeto.php',
+        'App\\CodigoQR' => __DIR__ . '/../..' . '/app/CodigoQR.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -505,6 +506,7 @@ class ComposerStaticInit36044eac90ec98025dbcb3087d87bf06
         'App\\Http\\Controllers\\CategoriaObjetoController' => __DIR__ . '/../..' . '/app/Http/Controllers/CategoriaObjetoController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\ObjetoController' => __DIR__ . '/../..' . '/app/Http/Controllers/ObjetoController.php',
         'App\\Http\\Controllers\\TipoUsuarioController' => __DIR__ . '/../..' . '/app/Http/Controllers/TipoUsuarioController.php',
         'App\\Http\\Controllers\\UsuarioTipoUsuarioController' => __DIR__ . '/../..' . '/app/Http/Controllers/UsuarioTipoUsuarioController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -619,6 +621,7 @@ class ComposerStaticInit36044eac90ec98025dbcb3087d87bf06
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
         'CategoriaObjetoSeeder' => __DIR__ . '/../..' . '/database/seeds/CategoriaObjetoSeeder.php',
         'CategoriaSeeder' => __DIR__ . '/../..' . '/database/seeds/CategoriaSeeder.php',
+        'CodigoQRSeeder' => __DIR__ . '/../..' . '/database/seeds/CodigoQRSeeder.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
