@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/validar_correo/{data?}','UserController@validar_correo');
+Route::post('/login/{data?}','UserController@login');
